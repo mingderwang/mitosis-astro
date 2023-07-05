@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Mitosis from '../components/Mitosis.astro';
+import MyButton from '../components/MyButton.jsx';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -9,6 +10,7 @@ import Mitosis from '../components/Mitosis.astro';
 	  <h1>Mitosis App</h1>
 	</header>
 	<main>
+	  <MyButton client:load />
 	  <Mitosis />
 	</main>
   </astro-doc>
